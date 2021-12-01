@@ -1,0 +1,2 @@
+in Command Line: npm install -g firebase-tools
+https://firebase.google.com/docs/cli/?authuser=1
