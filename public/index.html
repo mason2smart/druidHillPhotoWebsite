@@ -29,56 +29,84 @@
       to avoid connecting the SDK to running emulators.
     <script defer src="/__/firebase/init.js?useEmulator=false"></script>   -->
     <script src="materialize/js/materialize.min.js"></script>
+    <script src="materialize/js/jquery-3.6.0.min.js"></script>
 </head>
 <header style="z-index: 99">
     <!--- NAVIGATION BAR -------------------------------------------------------------------------------------------------->
-    <nav class="black hide-on-large-only" role="navigation" style="position: fixed; opacity: 0.9; z-index: 99; top: 0">
-        <div class="nav-wrapper container" style="opacity: 1" >
-            <a id="logo-container" href="#" class="brand-logo blue-text hide-on-med-and-up show-on-medium" style="text-align: left; padding-left: 8vw; white-space: nowrap; font-size:5vw; vertical-align:middle; opacity: 1.0">Druid Hill Project</a>
+    <nav class="black hide-on-large-only fixed" role="navigation" style="opacity: 0.9; z-index: 99; top: 0">
+        <div class="nav-wrapper container" style="opacity: 1">
+            <a id="logo-container" href="#" class="brand-logo blue-text hide-on-med-and-up show-on-medium"
+               style="text-align: left; padding-left: 8vw; white-space: nowrap; font-size:5vw; vertical-align:middle; opacity: 1.0">Druid
+                Hill Project</a>
             <!--Header for mobile and medium only-->
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger blue-text"><i class="material-icons" style="font-size:8vw; vertical-align: middle">menu</i></a>
+            <a href="#" data-target="sidenav" class="sidenav-trigger blue-text"><i class="material-icons"
+                                                                                   style="font-size:8vw; vertical-align: middle">menu</i></a>
         </div>
     </nav>
-    <ul id="nav-mobile" class="blue-grey lighten-5 opacity-50 sidenav table-of-contents">
-        <div class="logo" style="line-height:15px; padding-top: 20px; vertical-align: bottom; padding-bottom: 10px; font-size: 20px">
+    <ul id="sidenav" class="blue-grey lighten-5 opacity-50 sidenav table-of-contents">
+        <div class="logo"
+             style="line-height:15px; padding-top: 20px; vertical-align: bottom; padding-bottom: 10px; font-size: 20px">
             <a href="#" class="blue-text darken-2 bold">A Johns Hopkins Project</a>
         </div>
         <!----------------------------------TODO: SET SCROLLSPY LINKS ------------------------------------------------------------------------------------->
-        <li class="bold"><a href="#set1" class="waves-effect waves-grey blue-text" style="font-size: 15px">Set1</a></li>
-        <li class="bold"><a href="#set2" class="waves-effect waves-grey blue-text" style="font-size: 15px">Set2</a></li>
-        <li class="bold"><a href="#set3" class="waves-effect waves-grey blue-text" style="font-size: 15px">Set3</a></li>
+        <li class="bold"><a href="#set1" class="waves-effect waves-grey blue-text" style="font-size: 15px">1</a></li>
+        <li class="bold"><a href="#set2" class="waves-effect waves-grey blue-text" style="font-size: 15px">2</a></li>
+        <li class="bold"><a href="#set3" class="waves-effect waves-grey blue-text" style="font-size: 15px">3</a></li>
     </ul>
     <!--Header for desktop only-->
-    <nav class="black nav-extended hide-on-med-and-down fixed" role="navigation">
-        <div class="nav-wrapper container hide-on-med-and-down"><a href="#" class="brand-logo blue-text" style="text-align: center; white-space: nowrap; font-size:3vw; vertical-align:middle; opacity: 1.0">Druid Hill Project</a></div>
-            <div class="nav-content">
-                <ul id="navTabs" class="tabs tabs-transparent">
-                    <li class="tab"><a class ="active" href="#set1">set 1</a></li>
-                    <li class="tab"><a href="#set2">set 2</a></li>
-                    <li class="tab"><a href="#set3">set 3</a></li>
-                    <li class="tab"><a href="#set4">set 4</a></li>
-                </ul>
-            </div>
+    <nav class="black nav-extended hide-on-med-and-down fixed" role="navigation" style="opacity:0.9">
+        <div class="nav-wrapper hide-on-med-and-down center"><a href="#" class="brand-logo center blue-text"
+                                                                style="text-align: center; white-space: nowrap; font-size:3vw; vertical-align:middle; opacity: 1.0">Druid
+            Hill Project</a>
+            <ul id="nav-mobile" class="left lighten-2 opacity-50">
+                <li class="bold"><a href="#set1" class="waves-effect waves-grey blue-text" style="font-size: 15px">1</a>
+                </li>
+                <li class="bold"><a href="#set2" class="waves-effect waves-grey blue-text" style="font-size: 15px">2</a>
+                </li>
+                <li class="bold"><a href="#set3" class="waves-effect waves-grey blue-text" style="font-size: 15px">3</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-
-
-
 </header>
 <body> <!--- --------------------------------------------------------------------->
-<div id="set1" class="col s12"><p>Test 1</p></div>
-<div id="set2" class="col s12"><p>Test 2</p></div>
-<div id="set3" class="col s12"><p>Test 3</p></div>
-<div id="set4" class="col s12"><p>Test 4</p></div>
+<div class="row">
+    <h1>The Reservoir</h1>
+    <ul id="Tabs1" class="tabs tabs-transparent grey darken-2">
+        <li class="tab disabled"><a href="#">The Reservoir: </a></li>
+        <li class="tab"><a class="active" href="#set1">set 1</a></li>
+        <li class="tab"><a href="#set2">set 2</a></li>
+        <li class="tab"><a href="#set3">set 3</a></li>
+        <li class="tab"><a href="#set4">set 4</a></li>
+    </ul>
+    <div class="col s12">
+        <div id="set1" class="col s12">
+            <div class="row" style="width:100%;">
+                <div class="col s5"><img id="res1" class="responsive-img materialboxed" src="images/reservoir/_DSC0933.jpeg"
+                                         style="padding-left:.5vw; padding-top:2vw;  vertical-align: middle;"></div>
+                <div class="col s7">
+                    <h3 style="font-size: 5vw;"><u>Reservoir Overview</u></h3>
+                    <p style="font-size: 3vw; line-height: 3.3vw ">What the Reservoir Looks Like</p>
+                </div>
+            </div>
+            </div>
+            <div id="set2" class="col s12"><p>Test 2</p></div>
+            <div id="set3" class="col s12"><p>Test 3</p></div>
+            <div id="set4" class="col s12"><p>Test 4</p></div>
+        </div>
+    </div>
 
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems);
-        var el = document.querySelectorAll('.tabs');
-        var instance = M.Tabs.init(el);
-
-    });
-</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+            var el = document.querySelectorAll('.tabs');
+            var instance = M.Tabs.init(el);
+            $('#Tabs1').tabs({'swipeable': true});
+            $('.materialboxed').materialbox();
+            var imgBoxd = document.querySelectorAll('.materialboxed');
+            var imgInst = M.Materialbox.init(imgBoxd);
+        });
+    </script>
 </body>
 </html>
