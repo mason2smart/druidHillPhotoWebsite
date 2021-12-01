@@ -17,7 +17,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- update the version number as needed
@@ -28,8 +28,9 @@
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     <script defer src="/__/firebase/init.js?useEmulator=false"></script>   -->
-    <script src="materialize/js/materialize.min.js"></script>
-    <script src="materialize/js/jquery-3.6.0.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
 </head>
 <header style="z-index: 99">
     <!--- NAVIGATION BAR -------------------------------------------------------------------------------------------------->
@@ -102,11 +103,10 @@
             var instances = M.Sidenav.init(elems);
             var el = document.querySelectorAll('.tabs');
             var instance = M.Tabs.init(el);
-            $('#Tabs1').tabs({'swipeable': true});
-            $('.materialboxed').materialbox();
             var imgBoxd = document.querySelectorAll('.materialboxed');
             var imgInst = M.Materialbox.init(imgBoxd);
         });
     </script>
+    <script src="js/init.js"></script>
 </body>
 </html>
