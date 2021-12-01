@@ -13,31 +13,72 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Druid Hill</title>
+    <meta name="description" content="Project documenting work on Baltimore's Druid Hill Park Fall 2021">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.5.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.5.0/firebase-analytics-compat.js"></script>
+    <!-- update the version number as needed
+    <script defer src="/__/firebase/9.5.0/firebase-app-compat.js"></script>-->
+    <!-- include only the Firebase features as you need
+    <script defer src="/__/firebase/9.5.0/firebase-analytics-compat.js"></script>-->
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=false"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=false"></script>   -->
+    <script src="materialize/js/materialize.min.js"></script>
 </head>
+<header style="z-index: 99">
+    <!--- NAVIGATION BAR -------------------------------------------------------------------------------------------------->
+    <nav class="black hide-on-large-only" role="navigation" style="position: fixed; opacity: 0.9; z-index: 99; top: 0">
+        <div class="nav-wrapper container" style="opacity: 1" >
+            <a id="logo-container" href="#" class="brand-logo blue-text hide-on-med-and-up show-on-medium" style="text-align: left; padding-left: 8vw; white-space: nowrap; font-size:5vw; vertical-align:middle; opacity: 1.0">Druid Hill Project</a>
+            <!--Header for mobile and medium only-->
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger blue-text"><i class="material-icons" style="font-size:8vw; vertical-align: middle">menu</i></a>
+        </div>
+    </nav>
+    <ul id="nav-mobile" class="blue-grey lighten-5 opacity-50 sidenav table-of-contents">
+        <div class="logo" style="line-height:15px; padding-top: 20px; vertical-align: bottom; padding-bottom: 10px; font-size: 20px">
+            <a href="#" class="blue-text darken-2 bold">A Johns Hopkins Project</a>
+        </div>
+        <!----------------------------------TODO: SET SCROLLSPY LINKS ------------------------------------------------------------------------------------->
+        <li class="bold"><a href="#set1" class="waves-effect waves-grey blue-text" style="font-size: 15px">Set1</a></li>
+        <li class="bold"><a href="#set2" class="waves-effect waves-grey blue-text" style="font-size: 15px">Set2</a></li>
+        <li class="bold"><a href="#set3" class="waves-effect waves-grey blue-text" style="font-size: 15px">Set3</a></li>
+    </ul>
+    <!--Header for desktop only-->
+    <nav class="black nav-extended hide-on-med-and-down fixed" role="navigation">
+        <div class="nav-wrapper container hide-on-med-and-down"><a href="#" class="brand-logo blue-text" style="text-align: center; white-space: nowrap; font-size:3vw; vertical-align:middle; opacity: 1.0">Druid Hill Project</a></div>
+            <div class="nav-content">
+                <ul id="navTabs" class="tabs tabs-transparent">
+                    <li class="tab"><a class ="active" href="#set1">set 1</a></li>
+                    <li class="tab"><a href="#set2">set 2</a></li>
+                    <li class="tab"><a href="#set3">set 3</a></li>
+                    <li class="tab"><a href="#set4">set 4</a></li>
+                </ul>
+            </div>
+    </nav>
+
+
+
+</header>
 <body> <!--- --------------------------------------------------------------------->
+<div id="set1" class="col s12"><p>Test 1</p></div>
+<div id="set2" class="col s12"><p>Test 2</p></div>
+<div id="set3" class="col s12"><p>Test 3</p></div>
+<div id="set4" class="col s12"><p>Test 4</p></div>
 
-<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-    });
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+        var el = document.querySelectorAll('.tabs');
+        var instance = M.Tabs.init(el);
 
+    });
 </script>
 </body>
 </html>
