@@ -51,7 +51,9 @@
         <!----------------------------------TODO: SET SCROLLSPY LINKS ------------------------------------------------------------------------------------->
         <li class="bold"><a href="#overview" class="waves-effect waves-grey blue-text" style="font-size: 15px">Overview</a></li>
         <li class="bold"><a href="#cPlan" class="waves-effect waves-grey blue-text" style="font-size: 15px">The Plan</a></li>
-        <li class="bold"><a href="#set3" class="waves-effect waves-grey blue-text" style="font-size: 15px">3</a></li>
+        <li class="bold"><a href="#construction" class="waves-effect waves-grey blue-text" style="font-size: 15px">Construction</a></li>
+        <li class="bold"><a href="#people" class="waves-effect waves-grey blue-text" style="font-size: 15px">The People</a></li>
+
     </ul>
     <!--Header for desktop only-->
     <nav class="black nav-extended hide-on-med-and-down fixed" role="navigation" style="opacity:0.9">
@@ -63,7 +65,9 @@
                 </li>
                 <li class="bold"><a href="#cPlan" class="waves-effect waves-grey blue-text" style="font-size: 15px">The Plan</a>
                 </li>
-                <li class="bold"><a href="#set3" class="waves-effect waves-grey blue-text" style="font-size: 15px">3</a>
+                <li class="bold"><a href="#construction" class="waves-effect waves-grey blue-text" style="font-size: 15px">Construction</a>
+                </li>
+                <li class="bold"><a href="#people" class="waves-effect waves-grey blue-text" style="font-size: 15px">The People</a>
                 </li>
             </ul>
         </div>
@@ -111,7 +115,7 @@
         <div class="col s12">
             <div id="Cp1" class="col s12">
                 <div class="row" style="width:100%;">
-                    <div class="col s5"><img id="res1" class="responsive-img materialboxed" src="images/reservoir/_DSC0933.jpeg"
+                    <div class="col s5"><img class="responsive-img materialboxed" src="images/reservoir/_DSC0933.jpeg"
                                              style="padding-left:.5vw; padding-top:2vw;  vertical-align: middle;"></div>
                     <div class="col s7">
                         <h3 style="font-size: 5vw;"><u>Reservoir Overview</u></h3>
@@ -125,7 +129,62 @@
         </div>
     </div>
 </div>
-
+<!--------------------------------------- NEXT SECTION!!---------------------------------->
+<div id = "construction" class="section scrollspy"> <!-- scrollspy to reservoir with navbar links in header-->
+    <div class="row">
+        <h1>The Construction Process</h1>
+        <ul id="tabs-swipeCon" class="tabs tabs-transparent grey darken-2" tabOptions={{swipeable: true}}>
+            <!--<div class="tab disabled unclickable" style="pointer-events: none;"><a>The Reservoir: </a></div>-->
+            <li class="tab"><a class="active" href="#Con1">set 1</a></li>
+            <li class="tab"><a href="#Con2">set 2</a></li>
+            <li class="tab"><a href="#Con3">set 3</a></li>
+            <li class="tab"><a href="#Con4">set 4</a></li>
+        </ul>
+        <div class="col s12">
+            <div id="Con1" class="col s12">
+                <div class="row" style="width:100%;">
+                    <div class="col s5"><img class="responsive-img materialboxed" src="images/reservoir/_DSC0933.jpeg"
+                                             style="padding-left:.5vw; padding-top:2vw;  vertical-align: middle;"></div>
+                    <div class="col s7">
+                        <h3 style="font-size: 5vw;"><u>Reservoir Overview</u></h3>
+                        <p style="font-size: 3vw; line-height: 3.3vw ">What the Reservoir Looks Like</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Con2" class="col s12"><p>Test 2</p></div>
+            <div id="Con3" class="col s12"><p>Test 3</p></div>
+            <div id="Con4" class="col s12"><p>Test 4</p></div>
+        </div>
+    </div>
+</div>
+<!--------------------------------------- NEXT SECTION!!---------------------------------->
+<div id = "people" class="section scrollspy"> <!-- scrollspy to reservoir with navbar links in header-->
+    <div class="row">
+        <h1>The People</h1>
+        <ul id="tabs-swipePpl" class="tabs tabs-transparent grey darken-2" tabOptions={{swipeable: true}}>
+            <!--<div class="tab disabled unclickable" style="pointer-events: none;"><a>The Reservoir: </a></div>-->
+            <li class="tab"><a class="active" href="#Ppl1">set 1</a></li>
+            <li class="tab"><a href="#Ppl2">set 2</a></li>
+            <li class="tab"><a href="#Ppl3">set 3</a></li>
+            <li class="tab"><a href="#Ppl4">set 4</a></li>
+        </ul>
+        <div class="col s12">
+            <div id="Ppl1" class="col s12">
+                <div class="row" style="width:100%;">
+                    <div class="col s5"><img class="responsive-img materialboxed" src="images/reservoir/_DSC0933.jpeg"
+                                             style="padding-left:.5vw; padding-top:2vw;  vertical-align: middle;"></div>
+                    <div class="col s7">
+                        <h3 style="font-size: 5vw;"><u>Reservoir Overview</u></h3>
+                        <p style="font-size: 3vw; line-height: 3.3vw ">What the Reservoir Looks Like</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Ppl2" class="col s12"><p>Test 2</p></div>
+            <div id="Ppl3" class="col s12"><p>Test 3</p></div>
+            <div id="Ppl4" class="col s12"><p>Test 4</p></div>
+        </div>
+    </div>
+</div>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.sidenav');
